@@ -1,8 +1,8 @@
-<!-- # <img src="../img/logo.png" alt="logo" width="400"/> -->
+# <img src="../img/logo.png" alt="logo" width="400"/>
 
 
 
-![image](../img/logo.png)
+<!-- ![image](../img/logo.png) -->
 
 ## Mission
 
