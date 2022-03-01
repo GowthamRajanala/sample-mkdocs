@@ -1,0 +1,127 @@
+site_name: Intelligeni
+copyright: 2022 ML-Automation Squad Bangalore
+site_description: Documentation and FAQ Site
+repo_url: https://github.com/GowthamRajanala/sample-mkdocs
+site_author : MLA
+
+   
+nav:
+  - Overview : 
+    - Intro: index.md
+    - Product Demo : demo.md
+  - Intelligeni :
+    - Architecture: Intelligeni/arch.md
+    - Core Concepts:
+      - Zone: Intelligeni/core-concepts/zone.md
+      - Metrics: Intelligeni/core-concepts/metrics.md
+      - Graph Models:
+        - Node: Intelligeni/core-concepts/graph-models/node.md
+        - relationships: Intelligeni/core-concepts/graph-models/relationship.md
+      - Inventory: Intelligeni/core-concepts/inventory.md
+      - Alerts: Intelligeni/core-concepts/alerts.md
+      - Scenario: Intelligeni/core-concepts/scenario.md
+      - Health: Intelligeni/core-concepts/health.md
+      - igQL:
+        - Overview: Intelligeni/core-concepts/igQL/igql-overview.md
+        - User Guide: Intelligeni/core-concepts/igQL/user-guide.md
+        - Technical Guide: Intelligeni/core-concepts/igQL/tech-guide.md
+      - App Framework: Intelligeni/core-concepts/app-framework.md
+
+  - Design:
+    - Design Principle : Design/design-principle.md 
+    - Architecture : Design/arch.md
+    - Authentication : Design/auth.md
+    - Authorization : Design/authorization.md
+    - Caching: Design/caching.md
+    - Schema: Design/schema.md
+    - Security: Design/security.md
+    - Feature set: Design/featureset.md
+    - State Management: Design/state-management.md
+    - Monitoring: Design/monitor.md
+
+  # - ChatOps: chatops.md
+
+  - Intelligeni Integrations: 
+    - Aider Apps:
+      - Core: Intelligeni-integrations/aider/core.md
+      - igQL:  Intelligeni-integrations/aider/igql.md
+      - Smart center:  Intelligeni-integrations/aider/smart-centre.md
+      - Service Now:  Intelligeni-integrations/aider/snow.md
+      - ML Bot:  Intelligeni-integrations/aider/mlbot.md
+    - External Integrations:  
+      - Azure Integrations: 
+        - Azure Monitor Beat:  Intelligeni-integrations/external/azure/monitor-beat.md
+        - Azure Resource Discovery: Intelligeni-integrations/external/azure/resource-discovery.md
+        - Azure App Insights Resource Discovery: Intelligeni-integrations/external/azure/app-insights.md
+      - AWS: Intelligeni-integrations/external/aws.md
+      - App Dynamics: Intelligeni-integrations/external/app-dynamics.md
+      - Solar Winds: Intelligeni-integrations/external/solar-winds.md
+
+  
+  - Pipelines:
+    - Core Pipelines:
+      - Scenario creation: Pipelines/core/scenario-creation.md
+      - Scenario Metadata: Pipelines/core/scenario-meta.md
+      - Health computation using Spark: Pipelines/core/health-computation-spark.md
+      - Persisting Data to Elastic Search: Pipelines/core/persisting-data-es.md
+    - Edge Pipelines: Pipelines/edge/edge-pipeline.md
+  
+  # - Discovery in Intelligeni: discovery.md
+  # - Observability:
+  #   - HeatMap: heatmap.md
+  # - Machine learning:
+  #   - Anamoly detection: anamoly-detection.md
+  # - External Integrations:  
+  # - UI:
+  #   - Scenario: scenario.md
+  #   - Apps: apps.md
+  - SRE & DevOps:
+    - Helm Packages: SRE-DevOps/helm.md
+    - Monitoring: SRE-DevOps/monitoring.md
+    - SLI & SLO's: SRE-DevOps/sli-slo.md
+    - CI: SRE-DevOps/ci.md
+    - CD: SRE-DevOps/cd.md
+  - Coding Standards:
+    - ReactJS: Coding-Standards/reactjs.md
+    - NodeJS: Coding-Standards/nodejs.md
+    - Python: Coding-Standards/python.md
+    - GoLang: Coding-Standards/golang.md
+
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  feature:
+    tabs: true
+  features:
+    - navigation.sections
+    - navigation.tabs
+  palette:
+    - scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: ../img/logo.png
+
+  logo: ../img/logo.png
+    
+markdown_extensions:
+    - admonition
+    - codehilite:
+        guess_lang: true
+    - toc:
+          permalink: true
+    - pymdownx.mark
+    - pymdownx.smartsymbols
